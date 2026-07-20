@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark-mode">
+
+    
+    <header>
+        <nav>
+            <h2 class="logo">My Portfolio</h2>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            
+            <button id="theme-toggle">☀️</button>
+        </nav>
+    </header>
+
+    
+    <section id="home" class="home">
+
+        <div class="home-text">
+            <h1>Josef Carlos V. Crisostomo</h1>
+
+            <p>
+                Hello! I'm an aspiring web developer passionate about creating
+                beautiful and responsive websites. I enjoy learning new
+                technologies and improving my programming skills.
+            </p>
+
+            <a href="#projects" class="btn">View My Projects</a>
+        </div>
+
+        <div class="home-image">
+            <img src="me.jpg" alt="Profile Picture">
+        </div>
+
+    </section>
+
+    
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <div class="about-container">
+
+            <div>
+                <h3>Background</h3>
+
+                <p>
+                    I am currently studying Information Technology.
+                    I enjoy coding, designing websites, and solving problems.
+                    My goal is to become a professional software developer.
+                </p>
+            </div>
+
+            <div>
+                <h3>Skills</h3>
+
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>Adobe Photoshop</li>
+                    <li>Adobe Premiere Pro</li>
+                    <li>Communication</li>
+                    <li>Teamwork</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    
+    <section id="projects">
+
+        <h2>Projects</h2>
+
+        <div class="project-container">
+
+            <div class="project-card">
+                <img src="VID.jpg" alt="">
+                <h3>Video Editing</h3>
+                <p>
+                    Created professional wedding highlight videos using Adobe Premiere Pro. Enhanced footage with color grading, transitions, audio editing, and visual effects to deliver polished and memorable videos.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <img src="WEDDING.jpg" alt="">
+                <h3>Camera Operator</h3>
+                <p>
+                    Operated cameras during weddings to capture high-quality footage, focusing on composition, angles, lighting, and important event moments..
+                </p>
+            </div>
+
+            <div class="project-card">
+                <img src="PORTFOLIO.jpg" alt="">
+                <h3>Personal Portfolio</h3>
+                <p>
+                    A responsive personal website showcasing my
+                    projects, skills, and experience.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    
+    <section id="resume">
+
+        <h2>Resume / Experience</h2>
+
+        <div class="resume">
+
+            <h3>Education</h3>
+
+            <ul>
+                <li>BS in Information Technology (Animation & Game Development)</li>
+                <li>FEU Institute of Technology</li>
+            </ul>
+
+            <h3>Experience</h3>
+
+            <ul>
+                <li>Wedding Photo Editor (2024–Present)</li>
+                <li>Wedding Video Editor (2024–Present)</li>
+                <li>School Programming Activities</li>
+            </ul>
+
+            <h3>Certifications</h3>
+
+            <ul>
+                <li>Self-taught Wedding Photo Editor (2024–Present)</li>
+                <li>Self-taught Wedding Video Editor (2024–Present)</li>
+                <li>Continuous Learning in Adobe Photoshop & Premiere Pro</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+    
+    <section id="contact">
+
+        <h2>Contact Me</h2>
+
+        <div class="contact">
+
+            <p>Email: jvcrisostmo@fit.edu.ph</p>
+
+
+            <p>
+                GitHub:
+                <a href="#">https://github.com/Calistaaaaaaaa</a>
+            </p>
+
+        </div>
+
+    </section>
+
+    
+    <footer>
+        <p>© 2026 Crisostomo, Josef Carlos V. | Portfolio Website</p>
+    </footer>
+
+    
+    <script>
+        const toggle = document.getElementById("theme-toggle");
+
+        toggle.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+
+            if (document.body.classList.contains("dark-mode")) {
+                toggle.textContent = "☀️";
+            } else {
+                toggle.textContent = "🌙";
+            }
+        });
+    </script>
+
+</body>
+</html>
